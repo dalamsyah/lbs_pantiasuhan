@@ -1,0 +1,11 @@
+note: 
+
+generate ssh key
+1. cd ~/.ssh -> ssh-agent 
+
+1. ssh-keygen -t rsa -b 4096 -C "dimasalamsyah0712@gmail.com"
+2. eval $(ssh-agent -s)
+3. ssh-add ~/.ssh/id_rsa
+4. clip < ~/.ssh/id_rsa.pub
+5. paste in github
+6. git push -u origin master
